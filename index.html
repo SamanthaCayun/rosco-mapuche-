@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rosco Mapuche - Juego</title>
+
+  <!-- Vinculamos los estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Rosco Mapuche</h1>
+      <div class="stats">
+        <div id="progress">0 / 24 completados</div>
+        <div id="correct">Aciertos: 0</div>
+      </div>
+    </header>
+
+    <div class="board" aria-hidden="false">
+      <div class="letters" id="letters"></div>
+      <div class="ring">
+        <div class="center">
+          <h2>Rosco Mapuche</h2>
+          <small>Haz click en una letra para ver la pista</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="clue" id="clue">Selecciona una letra para ver la pista.</div>
+      <div class="controls">
+        <input id="answer" type="text" placeholder="Escribe tu respuesta aquí" autocomplete="off" />
+        <button id="submit">Comprobar</button>
+        <button id="skip" class="secondary">Pasar</button>
+        <button id="reveal" class="secondary">Mostrar respuesta</button>
+        <button id="reset" class="secondary">Reiniciar</button>
+      </div>
+      <footer>Consejo: Las respuestas no distinguen mayúsculas ni tildes.</footer>
+    </div>
+  </div>
+
+  <!-- Vinculamos el script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
